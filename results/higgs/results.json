@@ -1,0 +1,20 @@
+{
+  "configuration": {
+    "n_nodes": 40,
+    "mu_squared": -2.0,
+    "lambda_higgs": 0.5,
+    "n_steps": 2000,
+    "seed": 42
+  },
+  "final_state": {
+    "vev": 0.1630692176091456,
+    "phi_avg": 0.050706935979567644,
+    "phi_std": 0.20012600710685038,
+    "holonomy_avg": 1.0,
+    "symmetry_breaking": 0.0,
+    "energy": 540.0453042296535
+  },
+  "expected": {
+    "vev": 2.0
+  }
+}

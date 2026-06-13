@@ -1,0 +1,53 @@
+{
+  "GUT": {
+    "vev": 2.7051661793554596,
+    "symmetry_order": {
+      "avg_trace": 154.02461690216174,
+      "avg_commutator": 4640.405897236178,
+      "eigenvalue_spread": 42.89079821140033,
+      "symmetry_order": 0.3528022154738941,
+      "avg_distance_from_identity": 145.44559703167624
+    },
+    "group_fidelity": {
+      "U(1)": 15.402461690216175,
+      "SU(2)": 1.0000000000000002,
+      "abelian_approx": 0.9999999999971674,
+      "Spin(10)_preserved": 0.00022241315011343186,
+      "overall_symmetry": 0.3528022154738941
+    }
+  },
+  "INTERMEDIATE": {
+    "vev": 2.7051661793554596,
+    "symmetry_order": {
+      "avg_trace": 2036.1605670071247,
+      "avg_commutator": 1235939.9776144675,
+      "eigenvalue_spread": 570.4501207873758,
+      "symmetry_order": 0.9162519626904877,
+      "avg_distance_from_identity": 1974.313535970593
+    },
+    "group_fidelity": {
+      "U(1)": 203.61605670071248,
+      "SU(2)": 1.000000000000677,
+      "abelian_approx": 0.9999999995427216,
+      "Spin(10)_preserved": 8.287043534621106e-07,
+      "overall_symmetry": 0.9162519626904877
+    }
+  },
+  "SM": {
+    "vev": 2.7051661793554596,
+    "symmetry_order": {
+      "avg_trace": 2619.989931764717,
+      "avg_commutator": 2039755.5391352454,
+      "eigenvalue_spread": 759.6165559117765,
+      "symmetry_order": 0.41038739336424745,
+      "avg_distance_from_identity": 2527.24721960148
+    },
+    "group_fidelity": {
+      "U(1)": 261.9989931764717,
+      "SU(2)": 0.9999999999973597,
+      "abelian_approx": 0.9999999991783703,
+      "Spin(10)_preserved": 5.008464980415419e-07,
+      "overall_symmetry": 0.41038739336424745
+    }
+  }
+}

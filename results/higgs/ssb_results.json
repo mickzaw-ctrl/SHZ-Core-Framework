@@ -1,0 +1,13 @@
+{
+  "final_state": {
+    "vev": NaN,
+    "phi_avg": NaN,
+    "holonomy_avg": NaN,
+    "symmetry_breaking": NaN
+  },
+  "parameters": {
+    "mu_squared": -2.0,
+    "lambda_higgs": 0.5,
+    "n_steps": 500
+  }
+}
