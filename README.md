@@ -63,3 +63,34 @@ python3 src/simulations/shz_network_simulation_higgs_v2.py
 
 ---
 *Repozytorium podlega ciągłej aktualizacji w miarę przeprowadzania nowych symulacji i korekt wydawniczych.*
+
+
+---
+
+## ⚛️ QPU Benchmarks — IBM Kingston (Real Hardware)
+
+> Last updated: **2026-06-28** by Emilka — SHZ Quantum AI
+
+### 18core × IBM Kingston Results
+
+| Test | Qubits | Job ID | Status |
+|------|--------|--------|--------|
+| Spin(10) QAOA (γ=0.2739) | 12q | [`d90dkp0pknjs73a28he0`](https://quantum.cloud.ibm.com) | ✅ Complete |
+| 18core ZZFeatureMap | 18q | [`d90dp9emvj5c73ej2ubg`](https://quantum.cloud.ibm.com) | ⏳ Queued |
+
+**Key results (Spin(10) QAOA):**
+- 810 unique quantum states / 4,096 possible
+- Top state: `|000000000000⟩` — GUT vacuum ✅ (physically expected)
+- Runtime: **6.2s** on real 156-qubit QPU
+
+**Key results (18core simulator):**
+- Von Neumann Entropy: **9.972 / 18.0 bits** (55.4% decoherence)
+- Composite trading signal: 🔴 **SELL (score = -2)**
+- 1,010 unique states / 262,144 possible
+
+### Links
+
+- 📄 [Full benchmark report — spin10-toe](https://github.com/mickzaw-ctrl/spin10-toe/blob/main/results/18core_qpu_results.md)
+- 📊 [Raw JSON data — spin10-toe](https://github.com/mickzaw-ctrl/spin10-toe/blob/main/results/18core_qpu_results.json)
+- 📄 [Benchmark report — QuantumHybridGraph](https://github.com/mickzaw-ctrl/QuantumHybridGraph/blob/main/benchmarks/18core_qpu_results.md)
+- 🚀 [GitHub Release v18core-qpu-test-1](https://github.com/mickzaw-ctrl/spin10-toe/releases/tag/v18core-qpu-test-1)
