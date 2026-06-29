@@ -69,24 +69,26 @@ python3 src/simulations/shz_network_simulation_higgs_v2.py
 
 ## ⚛️ QPU Benchmarks — IBM Kingston (Real Hardware)
 
-> Last updated: **2026-06-28** by Emilka — SHZ Quantum AI
+> Last updated: **2026-06-29 00:46 UTC** by Emilka — SHZ Quantum AI  
+> **Status:** ✅ BOTH JOBS COMPLETE
 
 ### 18core × IBM Kingston Results
 
-| Test | Qubits | Job ID | Status |
-|------|--------|--------|--------|
-| Spin(10) QAOA (γ=0.2739) | 12q | [`d90dkp0pknjs73a28he0`](https://quantum.cloud.ibm.com) | ✅ Complete |
-| 18core ZZFeatureMap | 18q | [`d90dp9emvj5c73ej2ubg`](https://quantum.cloud.ibm.com) | ⏳ Queued |
+| Test | Qubits | Job ID | Status | Signal |
+|------|--------|--------|--------|--------|
+| Spin(10) QAOA (γ=0.2739) | 12q | [`d90dkp0pknjs73a28he0`](https://quantum.cloud.ibm.com) | ✅ Complete | GUT vacuum |
+| 18core ZZFeatureMap | 18q | [`d90dp9emvj5c73ej2ubg`](https://quantum.cloud.ibm.com) | ✅ Complete | 🟢 **BUY** |
 
-**Key results (Spin(10) QAOA):**
+**Spin(10) QAOA Results (12 qubits):**
 - 810 unique quantum states / 4,096 possible
-- Top state: `|000000000000⟩` — GUT vacuum ✅ (physically expected)
+- Top state: `|000000000000⟩` — **GUT vacuum** ✅ (ground state of SHZ unification)
 - Runtime: **6.2s** on real 156-qubit QPU
 
-**Key results (18core simulator):**
-- Von Neumann Entropy: **9.972 / 18.0 bits** (55.4% decoherence)
-- Composite trading signal: 🔴 **SELL (score = -2)**
-- 1,010 unique states / 262,144 possible
+**18core Feature Map Results (18 qubits, REAL QPU):**
+- Von Neumann Entropy: **9.998 / 18.0 bits** ✅ (99.98% utilization!)
+- Unique states: **1,023 / 262,144** 
+- Composite trading signal: **🟢 BUY (score = +4)** ⬆️ (reversed from simulator!)
+- Top state: `|100100101111010100⟩`
 
 ### Links
 
