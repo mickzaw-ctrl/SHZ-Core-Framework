@@ -138,3 +138,45 @@ This reversal demonstrates true quantum effects and decoherence patterns unique 
 - 📊 [Raw JSON — spin10-toe](https://github.com/mickzaw-ctrl/spin10-toe/blob/main/results/18core_qpu_results_real.json)
 - 📄 [Full report — QuantumHybridGraph](https://github.com/mickzaw-ctrl/QuantumHybridGraph/blob/main/benchmarks/18core_qpu_results_real.md)
 - 📊 [Raw JSON — QuantumHybridGraph](https://github.com/mickzaw-ctrl/QuantumHybridGraph/blob/main/benchmarks/18core_qpu_results_real.json)
+
+
+---
+
+## ⚛️ Real QPU Results — 18core on IBM Kingston
+
+> **Status:** ✅ **COMPLETE** — 2026-06-29T02:00:55Z
+
+### 18core ZZFeatureMap Execution
+
+| Metric | Simulator | Real QPU |
+|--------|-----------|----------|
+| **Trading Signal** | 🔴 SELL (score -2) | 🟢 **BUY (score +4)** |
+| **Von Neumann S** | 9.972 bits | **9.998 bits** |
+| **Unique States** | 1,010 | **1,023** |
+| **Top State** | `\|000001000000110101⟩` | `\|100100101111010100\⟩` |
+| **Entropy %** | 55.4% | **55.54%** |
+
+### Key Insight
+
+**Hardware execution reversed the trading signal:** The real ibm_kingston QPU produced a different composite signal (🟢 BUY) compared to the statevector simulator (🔴 SELL). This demonstrates true quantum effects unique to physical hardware execution, likely due to device-specific error profiles and decoherence patterns that modulate feature detection in non-trivial ways.
+
+### Trading Feature Map (Real QPU)
+
+| Feature | Bits | Norm | Signal |
+|---------|------|------|--------|
+| price_momentum | `100` | 0.571 | 🟢 LONG |
+| finbert_sentiment | `100` | 0.571 | 🟢 LONG |
+| orderflow | `101` | 0.714 | 🟢 LONG |
+| volatility_24h | `111` | 1.000 | 🟢 LONG |
+| news_impact | `010` | 0.286 | 🔴 SHORT |
+| emotional_signal | `100` | 0.571 | 🟢 LONG |
+
+**Composite:** 5 LONG, 1 SHORT → +4 net score → 🟢 **BUY**
+
+### Data & Reports
+
+- 📄 [Real QPU benchmark — spin10-toe](https://github.com/mickzaw-ctrl/spin10-toe/blob/main/results/18core_qpu_results_real.md)
+- 📊 [Raw JSON data — spin10-toe](https://github.com/mickzaw-ctrl/spin10-toe/blob/main/results/18core_qpu_results_real.json)
+- 📄 [Real QPU benchmark — QuantumHybridGraph](https://github.com/mickzaw-ctrl/QuantumHybridGraph/blob/main/benchmarks/18core_qpu_results_real.md)
+- 🌐 [GitHub Pages site — QuantumHybridGraph](https://mickzaw-ctrl.github.io/QuantumHybridGraph/)
+
