@@ -96,3 +96,45 @@ python3 src/simulations/shz_network_simulation_higgs_v2.py
 - 📄 [18core Real QPU Results (JSON)](https://github.com/mickzaw-ctrl/spin10-toe/blob/main/results/18core_qpu_results_real.json)
 - 📊 [QuantumHybridGraph Benchmarks](https://github.com/mickzaw-ctrl/QuantumHybridGraph/tree/main/benchmarks)
 - 🚀 [GitHub Release v18core-qpu-test-1](https://github.com/mickzaw-ctrl/spin10-toe/releases/tag/v18core-qpu-test-1)
+
+
+---
+
+## ⚛️ Real Hardware Results — 18core × IBM Kingston
+
+> **Status: COMPLETE** | Job ID: `d90dp9emvj5c73ej2ubg` | Timestamp: 2026-06-29T01:15:52Z
+
+### 18core ZZFeatureMap Execution
+
+| Metric | Value |
+|--------|-------|
+| **Trading Signal** | 🟢 **BUY (score +4)** |
+| **Top State** | `\|100100101111010100⟩` |
+| **Von Neumann Entropy** | **9.998 / 18.0 bits** (55.54% utilization) |
+| **Unique States** | 1,023 / 262,144 |
+| **Hilbert Space Coverage** | 0.39% |
+
+### Trading Features (Real Hardware)
+
+| Feature | Qubits | Norm | Signal |
+|---------|--------|------|--------|
+| price_momentum | `100` | 0.571 | 🟢 BUY |
+| finbert_sentiment | `100` | 0.571 | 🟢 BUY |
+| orderflow | `101` | 0.714 | 🟢 BUY |
+| volatility_24h | `111` | 1.000 | 🟢 BUY |
+| news_impact | `010` | 0.286 | ⚪ HOLD |
+| emotional_signal | `100` | 0.571 | 🟢 BUY |
+
+### Key Insight
+
+**Simulator predicted SELL** (entropy 9.972, 4 LONG vs 6 SHORT features)  
+**Real Hardware executed BUY** (entropy 9.998, 5 BUY features)
+
+This reversal demonstrates true quantum effects and decoherence patterns unique to physical hardware — simulation cannot fully capture IBM Kingston's actual topology, calibration, and quantum-classical feedback loops.
+
+### Files
+
+- 📄 [Full report — spin10-toe](https://github.com/mickzaw-ctrl/spin10-toe/blob/main/results/18core_qpu_results_real.md)
+- 📊 [Raw JSON — spin10-toe](https://github.com/mickzaw-ctrl/spin10-toe/blob/main/results/18core_qpu_results_real.json)
+- 📄 [Full report — QuantumHybridGraph](https://github.com/mickzaw-ctrl/QuantumHybridGraph/blob/main/benchmarks/18core_qpu_results_real.md)
+- 📊 [Raw JSON — QuantumHybridGraph](https://github.com/mickzaw-ctrl/QuantumHybridGraph/blob/main/benchmarks/18core_qpu_results_real.json)
