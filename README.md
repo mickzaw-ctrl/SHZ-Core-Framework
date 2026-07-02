@@ -180,3 +180,12 @@ This reversal demonstrates true quantum effects and decoherence patterns unique 
 - 📄 [Real QPU benchmark — QuantumHybridGraph](https://github.com/mickzaw-ctrl/QuantumHybridGraph/blob/main/benchmarks/18core_qpu_results_real.md)
 - 🌐 [GitHub Pages site — QuantumHybridGraph](https://mickzaw-ctrl.github.io/QuantumHybridGraph/)
 
+
+
+---
+
+## 🔧 IBM Quantum Test Pipeline
+
+For hardware validation, noise modeling and error mitigation, see the companion repository:
+
+- 🧪 [**ibm-quantum-pipeline**](https://github.com/mickzaw-ctrl/ibm-quantum-pipeline) — Hybrid Qiskit Aer → IBM Cloud test pipeline with depolarizing noise models, ZNE/PEC error mitigation, and randomized benchmarking, aligned with the SHZSpin10 Testing Schema (`Local → Cloud → Validation`).
